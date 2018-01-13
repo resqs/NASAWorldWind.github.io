@@ -5,6 +5,7 @@
 {{ $htmlSource := .Get "htmlSource" }}
 {{ $jsLink := .Get "jsLink" }}
 {{ $htmlLink := .Get "htmlLink" }}
+{{ $shortDesc := .Get "shortDesc" }}
 <div class="col-md-4">
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -17,6 +18,8 @@
             <h5>Source:</h5>
             <a href="{{ $jsLink }}">{{ $jsSource }}</a><br/>
             <a href="{{ $htmlLink }}">{{ $htmlSource }}</a>
+            <h5>Description:</h5>
+            <p>{{ $shortDesc }}</p>
         </div>
     </div>
 </div>
